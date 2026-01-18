@@ -1,6 +1,6 @@
 # Japan Tap Gates Project
 
-This project is an exploration of **high-volume, low-latency transaction systems**, inspired by real-world transit infrastructure like Japan’s train gates.
+This project is an exploration of **high-volume, low-latency transaction systems**, inspired by real-world transit infrastructure like Japan’s train gates. One implementation of this is the Suica payment card used ubiquitously in japan for all types of transactions.
 
 In Japan, millions of passengers pass through automated train gates every day. Each tap of a card must be validated, recorded, and completed in a fraction of a second. The system is expected to work reliably at massive scale, under constant load, with zero tolerance for delays.
 
