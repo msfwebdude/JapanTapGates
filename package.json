@@ -1,0 +1,21 @@
+{
+  "name": "suica",
+  "version": "1.0.0",
+  "description": "suica node insert rows",
+  "main": "./app/main.js",
+  "author": "Mike Firoved",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "knex": "^3.1.0",
+    "pg": "^8.17.0",
+    "unique-names-generator": "^4.7.1"
+  },
+  "scripts": {
+    "make-db": "docker compose up -d ",
+    "migrate": "knex migrate:latest",
+    "seed-db": "node ./app/initialize-db.js",
+    "kill-db": "docker compose down -v",
+    "try-card": "node ./app/try-query-card.js"
+  }
+}
